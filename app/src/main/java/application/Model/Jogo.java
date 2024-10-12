@@ -32,7 +32,7 @@ public class Jogo {
         name = "jogos_possuem_plataformas",
         joinColumns = @JoinColumn(name = "id_jogos"),
         inverseJoinColumns = @JoinColumn(name = "id_plataformas"))
-    private Set<Plataforma> plataformas = HashSet<>();
+    private Set<Plataforma> plataformas = new HashSet<>();
 
     public long getId() {
         return id;
