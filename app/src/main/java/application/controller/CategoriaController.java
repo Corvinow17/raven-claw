@@ -44,15 +44,15 @@ public class CategoriaController {
         @RequestParam("id") long id,
         Model ui) {
         
-            Optional<Categoria> categoria = categoriaRepo.findById(id);
+        Optional<Categoria> categoria = categoriaRepo.findById(id);
 
-            if(categoria.isPresent()) {
-                ui.addAttribute("categoria", categoria.get());
-                return "categoria/update";
-            }
-
-            return "redirect:/categoria/list";
+        if(categoria.isPresent()) {
+            ui.addAttribute("categoria", categoria.get());
+            return "categoria/update";
         }
+
+        return "redirect:/categoria/list";
+    }
     
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public String update(

@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -13,7 +13,7 @@
             <form action="/jogo/insert" method="post">
                 <div class="form-group">
                     <label for="titulo">Título:</label>
-                    <input type="text" name="titulo" class="form-control">
+                    <input type="text" name="titulo" class="form-control" />
             </div>
             <div class="form-group">
                 <label for="categoria">Categoria:</label>
@@ -27,8 +27,8 @@
                 <label for="plataforma">Plataforma(s):</label>
                 <c:forEach var="p" items="${plataformas}">
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="platform_${p.id}" name="plataformas" value="${p.id}">
-                    <label class="custom-control-label" for="platform_${p.id}">${p.nome}</label>
+                    <input type="checkbox" class="custom-control-input" name="plataformas" value="${p.id}" id="${p.id}" />
+                    <label class="custom-control-label" for="${p.id}">${p.nome}</label>
                 </div>
                 </c:forEach>
             </div>

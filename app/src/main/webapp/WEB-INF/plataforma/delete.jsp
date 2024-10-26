@@ -11,7 +11,7 @@
             <h1>Remover Plataforma</h1>
             <p>Tem certeza que deseja remover a plataforma "${plataforma.nome}" ?</p>
             <form action="/plataforma/delete" method="post">
-                <input type="hidden" name="id" value="${plataforma;id}" />
+                <input type="hidden" name="id" value="${plataforma.id}" />
                 <br />
                 <a href="/plataforma/list" class="btn btn-primary" >Voltar</a>
                 <button type="submit" class="btn btn-danger">Excluir</button>
