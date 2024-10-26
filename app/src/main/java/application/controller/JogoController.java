@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import application.model.Jogo;
 import application.model.Plataforma;
 import application.repository.CategoriaRepository;
-import application.repository.PlataformaRepository;
 import application.repository.JogoRepository;
+import application.repository.PlataformaRepository;
 
 @Controller
 @RequestMapping("/jogo")
@@ -64,7 +64,7 @@ public class JogoController {
         @RequestParam("id") long id,
         Model ui) {
 
-        Optional<application.Model.Jogo> jogo = jogoRepo.findById(id);
+        Optional<Jogo> jogo = jogoRepo.findById(id);
         if (jogo.isPresent()) {
             ui.addAttribute("jogo", jogo.get());
             ui.addAttribute("categorias", categoriaRepo.findAll());

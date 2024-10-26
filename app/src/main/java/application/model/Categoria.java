@@ -31,7 +31,7 @@ public class Categoria {
         this.id = id;
     }
 
-    public string getNome() {
+    public String getNome() {
         return nome;
     }
 
