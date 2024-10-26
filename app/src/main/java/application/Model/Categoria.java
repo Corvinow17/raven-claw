@@ -1,6 +1,5 @@
 package application.model;
 
-import java.lang.annotation.Inherited;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -28,7 +27,7 @@ public class Categoria {
         return id;
     }
 
-    public setId(long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
