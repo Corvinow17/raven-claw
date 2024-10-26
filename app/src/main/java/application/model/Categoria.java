@@ -20,7 +20,7 @@ public class Categoria {
     @Column(unique = true, nullable = false)
     private String nome;
 
-    @OneToMany(mappedBy = "Categoria")
+    @OneToMany(mappedBy = "categoria")
     private Set<Jogo> jogos = new HashSet<>();
 
     public long getId() {
@@ -39,7 +39,7 @@ public class Categoria {
         this.nome = nome;
     }
 
-    public Set<Jogo> getJogos () {
+    public Set<Jogo> getJogos() {
         return jogos;
     }
 
