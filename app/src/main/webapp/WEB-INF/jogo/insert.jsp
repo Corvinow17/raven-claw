@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <title>Novo Jogo</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
@@ -12,7 +12,7 @@
             <h1>Novo Jogo</h1>
             <form action="/jogo/insert" method="post">
                 <div class="form-group">
-                    <label for="titulo">Título:</label>
+                    <label for="titulo">Titulo:</label>
                     <input type="text" name="titulo" class="form-control" />
             </div>
             <div class="form-group">

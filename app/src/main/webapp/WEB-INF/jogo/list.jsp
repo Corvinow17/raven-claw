@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <title>Jogos</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
@@ -19,7 +19,7 @@
                     <th>Plataformas</th>
                     <th>&nbsp;</th>
                 </tr>
-                    <c:forEach var="item" items="${jogos}">
+                <c:forEach var="item" items="${jogos}">
                     <tr>
                         <td>${item.id}</td>
                         <td>${item.titulo}</td>
